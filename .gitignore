@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+node_modules.bak/
+dist/
+npm-debug.log*
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+
+.idea/
+*.log
+*.out
+client/assets/image/computer.jpg
+client/assets/image/keyboard.jpg
+client/assets/image/Components/*.png
+client/assets/image/Projects/*.png
+/local_npm_list
