@@ -11,7 +11,7 @@ pipeline {
     stage('deploy'){
       steps{
         sh 'pwd'
-        sh(returnStdout: true, script: "nohup npm run dev &")
+        sh(returnStdout: true, script: "nohup npm run dev >> /var/log/expressoutput.log 2>&1 &")
         sh 'npm -v'
       }
     }
