@@ -11,7 +11,7 @@ pipeline {
     stage('deploy'){
       steps{
         sh 'pwd'
-        sh 'nohup npm run dev \&'
+        sh "nohup npm run dev &"
         sh 'npm -v'
       }
     }
