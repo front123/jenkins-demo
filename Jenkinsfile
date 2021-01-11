@@ -5,11 +5,13 @@ pipeline {
       steps {
           sh 'npm install'
           sh 'ls'
+          sh 'which nohup'
+          sh 'yum provides */nohup'
       }
     }
     stage('deploy'){
       steps{
-        sh 'npm run dev'
+        sh 'nohup npm run dev &'
       }
     }
   }
