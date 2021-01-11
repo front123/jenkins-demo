@@ -6,7 +6,6 @@ pipeline {
           sh 'npm install'
           sh 'ls'
           sh 'which nohup'
-          sh 'yum provides */nohup'
       }
     }
     stage('deploy'){
