@@ -11,7 +11,7 @@ pipeline {
     stage('deploy'){
       steps{
         sh 'pwd'
-        sh 'JENKINS_NODE_COOKIE=dontKillMe nohup npm run dev &'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe nohup npm run dev > /dev/null 2>&1 &'
         sh 'npm -v'
       }
     }
